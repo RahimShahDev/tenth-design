@@ -1,0 +1,105 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header {
+    position: relative;
+}
+.acount-home{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 90vh; */
+
+
+}
+#acount-home-text{
+    width: 45%;
+    height: auto;
+
+}
+#acount-home-text h2{
+    font-size: 2.15rem;
+    margin-bottom: 30px;
+}
+#acount-home-text form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#acount-home-text form input{
+padding: 20px 15px;
+width: 65%;
+margin-bottom: 20px;
+margin-top: 5px;
+border-radius: 5px;
+}
+#acount-home-text form button{
+    width: 25%;
+    padding: 15px 10px;
+    /* font-size: 1.15rem; */
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#acount-home-image{
+    width: 50%;
+    height: auto;
+}
+#acount-home-image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Media Query  */
+@media only screen and (max-width: 992px){
+    .nav-bar{
+        display: none;
+    }
+    #acount-home-image{
+        display: none;
+    }
+
+    .acount-home{
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+    #acount-home-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    
+    }
+
+    #acount-home-text form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #acount-home-text h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    #acount-home-text form input{
+    padding: 15px 10px;
+    width: 90%;
+    }
+    #acount-home-text form button{
+        width: 25%;
+        padding: 15px 10px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+}

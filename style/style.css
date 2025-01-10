@@ -1,0 +1,581 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    height: 85vh;
+    background: url('/images/home.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-bar-links ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+#nav-bar-links ul li {
+    list-style: none;
+    padding: 0 25px;
+}
+
+#nav-bar-links ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+#nav-bar-btn button {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+#nav-bar-btn button:hover{
+    color: black;
+    background-color: white;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 60%;
+    color: white;
+    margin: 0 auto;
+    font-size: 1.35rem;
+    align-items: flex-start;
+}
+
+.home-text h2 {
+    margin: 0;
+}
+
+.home-text p {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.home-text button {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.bottom-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-links ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.first-link, .third-link{
+    background-color: #FFFFFF;
+    padding: 47px 40px;
+    transition: padding 0.5s ease-in-out;
+}
+
+.second-link {
+    background-color: #F2F2F2;
+    padding: 47px 40px;
+    transition: padding 0.5s ease-in-out;
+}
+.first-link:hover, .third-link:hover, .second-link:hover{
+    padding: 180px 40px;
+    padding-bottom: 0;
+}
+
+.bottom-links ul li {
+    list-style: none;
+    /* padding: 50px; */
+    height: 130px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: padding 0.5s linear;
+}
+
+.bottom-links ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    /* transition: padding 0.5s linear; */
+}
+
+
+
+
+/* Main Section  */
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 45px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#main-text {
+    max-width: 500px;
+    height: auto;
+    font-size: 1.45rem;
+
+}
+
+#main-text button {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main-image {
+    max-width: 500px;
+    height: auto;
+}
+
+#main-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* For Right Section  */
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 65px;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#right-image {
+    position: absolute;
+    top: -50px;
+    left: 60px;
+    max-width: 700px;
+    height: 430px;
+}
+
+#right-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#right-text {
+    max-width: 520px;
+    height: auto;
+}
+
+#right-text button {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Spot-light section  */
+.spot-light {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+.spot-light-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#spot-light-image {
+    max-width: 250px;
+    padding: 0px 10px;
+}
+
+#spot-light-image img {
+    width: 100%;
+}
+
+
+/* Contact Section  */
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 150px;
+}
+
+#contact-us ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+#contact-us ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#services {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 250px;
+}
+
+#services ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+#services ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#informations {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 350px;
+}
+
+#informations ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+#informations ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#socail-media-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 150px;
+}
+
+
+/* media queries   */
+@media only screen and (max-width: 992px) {
+
+    /* .bottom-links{
+        display: none;
+    } */
+    #nav-bar-btn {
+        display: none;
+    }
+
+    .home-text {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 40px;
+        max-width: 75%;
+        color: white;
+        margin: 0 auto;
+        font-size: 1.35rem;
+        align-items: flex-start;
+    }
+    
+
+    /* Main Section  */
+    .main {
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+    }
+
+    #main-text {
+        max-width: 850px;
+        font-size: 1.25rem;
+
+    }
+
+    #main-text h2 {
+        margin-bottom: 0px;
+    }
+
+    #main-text button {
+        padding: 10px;
+        color: white;
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 10px 0px;
+    }
+
+    #main-image {
+        max-width: 850px;
+    }
+
+    /* For Right Section  */
+    .right {
+        position: static;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+
+    #right-image {
+        position: static;
+        width: 95%;
+        height: 250px;
+    }
+
+    #right-text {
+        max-width: 750px;
+    }
+
+
+    /* Spot-light section  */
+    .spot-light {
+        padding: 30px;
+        font-size: 1.20rem;
+    }
+
+    .spot-light-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    #spot-light-image {
+        max-width: 500px;
+        padding: 10px;
+    }
+
+    .dis-null {
+        display: none;
+    }
+
+    #spot-light-image img {
+        width: 100%;
+    }
+
+    /* Contact Section  */
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #contact-us {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    #contact-us p {
+        margin-bottom: 0px;
+    }
+
+    #contact-us ul {
+        padding-left: 0px;
+    }
+
+
+    #services {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    #services ul li {
+        list-style: none;
+        padding: 5px 0px;
+    }
+
+    #services p {
+        margin-bottom: 0px;
+    }
+
+    #services ul {
+        padding-left: 0px;
+    }
+
+    #services ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #informations {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    #informations p {
+        margin-bottom: 0px;
+    }
+
+    #informations ul {
+        padding-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .home {
+        height: 50vh;
+    }
+
+    .bottom-links {
+        display: none;
+    }
+
+    .home-text {
+        padding: 60px 40px;
+        max-width: 100%;
+        font-size: 1rem;
+
+    }
+
+    .home-text h2 {
+        display: none;
+    }
+
+    .home-text p {
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+
+    /* Main Section  */
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+
+    #main-text {
+        max-width: 700px;
+        font-size: 1.25rem;
+
+    }
+
+    #main-image {
+        width: 98%;
+        height: auto;
+    }
+
+
+    /* For Right Section  */
+    .right {
+        position: static;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+    }
+
+    #right-image {
+        position: static;
+        width: 95%;
+        height: 250px;
+    }
+
+    #right-text {
+        width: 95%;
+    }
+
+    #right-text button {
+        color: black;
+        background-color: white;
+    }
+    /* #right-text button a{
+        color: white;
+        background-color: black;
+    } */
+
+    #services {
+        display: none;
+    }
+
+
+    /* Contact Section  */
+    .contact {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    /* Spot-light section  */
+
+    .spot-light{
+        padding: 15px;
+    }
+    #spot-light-image {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .dis2-null {
+        display: none;
+    }
+
+    #spot-light-image img {
+        width: 100%;
+    }
+}
